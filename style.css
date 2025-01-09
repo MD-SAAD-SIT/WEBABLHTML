@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  font-size: 16px; /* Base font size for consistent scaling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+nav.first {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  height: 60px; /* Fixed height */
+  background-color: rgb(0, 55, 123);
+}
+
+.first ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px; /* Reduced gap for better alignment */
+}
+
+.first ul li {
+  font-size: 1rem; /* Scalable text size */
+  cursor: pointer;
+  color: white;
+  list-style: none;
+  padding: 10px 20px; /* Consistent padding */
+}
+
+.first ul span {
+  display: flex; /* Align search and apply buttons */
+  align-items: center;
+}
+
+.first ul span li input {
+  height: 40px;
+}
+
+#search {
+  width: 250px; /* Reduced width for better scaling */
+  padding: 0 10px;
+}
+
+#apply {
+  cursor: pointer;
+  color: white;
+  width: 80px;
+  font-size: 0.9rem;
+  background-color: orange;
+  border: none;
+}
+
+nav.second {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0px 4px 13px 0px gray;
+}
+
+.second .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 100px; /* Scalable logo size */
+}
+
+.name h1 {
+  font-size: 2rem; /* Scalable heading */
+  color: rgb(0, 45, 116);
+}
+
+.name h3 {
+  font-size: 1rem;
+  color: rgb(0, 45, 116);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px; /* Add consistent spacing */
+}
+
+.nav ul li a{
+  font-weight: 550;
+  cursor: pointer;
+  color: rgb(0, 55, 123);
+  padding: 10px 15px; /* Consistent padding */
+  border-right: 2px solid rgb(0, 55, 123);
+}
+
+.nav ul li:last-child a{
+  border-right: none; /* Remove border from the last item */
+}
+
+main {
+    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.info {
+  flex: 1;
+  border: 2px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info .head {
+  background-color: rgb(0, 72, 159);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.info .elements {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info .elements label {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 1.3rem;
+}
+
+.info .elements input,
+.info .elements select {
+  flex: 2;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+.submit {
+  align-self: center;
+  width: 50%;
+}
+
+.submit input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(9, 77, 160);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.side-img {
+  flex: 0.8; /* Adjust size relative to .info */
+  position: relative;
+}
+.side-img img {
+  width: 100%;
+  height: 100%; /* Ensure the image covers the container */
+  object-fit: cover; /* Ensures the image covers the container proportionally */
+  object-position: center; /* Centers the image content */
+}
+.side-img div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.cont span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cont hr {
+  width: 50%;
+  border: 1px solid white;
+  margin: 10px auto;
+}
+/* Hover effect for top navigation bar items */
+.first ul>li:hover {
+  background-color: white; /* Background changes to white */
+  color: rgb(0, 55, 123); /* Text color changes to the navigation color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for secondary navigation items */
+.nav ul li a:hover {
+  background-color: rgb(0, 55, 123); /* Darker blue background */
+  color: white; /* White text */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Submit button hover effect */
+.submit input:hover {
+  background-color: rgb(6, 58, 130); /* Slightly darker blue */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+#dobInput{
+  color: gray;
+}
+.elements label span{
+  position: absolute;
+  left: 20%;
+  font-size: 2.3vw;
+}
+.table {
+  margin: 8vh 0 3vh 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+   /* Animation applied */
+}
+tr{
+  opacity: 0; /* Initially hidden */
+  animation: fadeInSlideUp 0.5s ease forwards;
+}
+tr:nth-child(1) { animation-delay: 0.1s; }
+tr:nth-child(2) { animation-delay: 0.2s; }
+tr:nth-child(3) { animation-delay: 0.3s; }
+tr:nth-child(4) { animation-delay: 0.4s; }
+tr:nth-child(5) { animation-delay: 0.5s; }
+tr:nth-child(6) { animation-delay: 0.6s; }
+tr:nth-child(7) { animation-delay: 0.7s; }
+tr:nth-child(8) { animation-delay: 0.8s; }
+tr:nth-child(9) { animation-delay: 0.9s; }
+tr:nth-child(10) { animation-delay: 1.0s; }
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+table,th,td{
+  border: 1.5px solid black;
+  border-collapse: collapse;
+}
+th,td{
+  width: 10vw;
+  text-align: center;
+  padding: 5px 0;
+}
+tr:last-of-type td:first-of-type{
+  border-right: none;
+}
+tr:last-of-type td:nth-of-type(2){
+  border-left: none;
+}
+ul li a{
+  text-decoration: none;
+  color: rgb(0, 55, 123);
+}
+/* .print{
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px 50px;
+  margin-bottom: 2vh;
+} */
+ /* Style the syllabus and submenu */
+#syllabus {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(0, 45, 116);
+
+}
+#syllabus:hover{
+  color: white;
+  background-color: rgb(0, 45, 116);
+  transition: background-color 0.3s, color 0.3s;
+}
+#options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none; /* Hidden by default */
+}
+
+#options li a{
+  padding: 0px 12px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(0, 45, 116);
+}
+
+/* Show submenu when hovering over parent */
+#syllabus:hover #options {
+  display: block; /* Show when hovered */
+}
+
+/* Highlight submenu items on hover */
+#options li a:hover {
+  background-color: rgb(0, 45, 116);
+  color: white;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <title>RESULT ANALYSIS</title>
+</head>
+
+<body>
+    <nav class="first">
+        <ul>
+            <li>Students</li>
+            <li>Parents</li>
+            <li>Alumni</li>
+            <li>Work with us</li>
+            <li>Give to SIT</li>
+            <li>Contact</li>
+            <span>
+                <li><input type="search" name="" id="search" placeholder="search"></li>
+            </span>
+            <span>
+                <li><input type="button" value="Apply" id="apply"></li>
+            </span>
+        </ul>
+    </nav>
+    <nav class="second">
+        <div class="logo">
+            <img src="sit.png" alt="">
+            <div class="name">
+                <h1>SIT</h1>
+                <h3>TUMKUR</h3>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <ul>
+                    <li id="syllabus" style="border-right: 2px solid rgb(0, 55, 123);">Syllabus
+                        <ul id="options" class="hidden">
+                            <li><a href="1stsem.pdf">1<sup>st</sup> sem</a></li>
+                            <li><a href="3rdsem.pdf">3<sup>rd</sup> sem</a></li>
+                            <li><a href="5thsem.pdf">5<sup>th</sup> sem</a></li>
+                            <li><a href="7thsem.pdf">7<sup>th</sup> sem</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <li><a target="_blank" href="https://sit.irins.org/">Faculty</a></li>
+                <li><a href="http://www.sit.ac.in/html/programme.php">Admissions</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="dt">
+        <div class="details">
+            <div class="info">
+                <div class="head">
+                    <h1>ENTER DETAILS</h1>
+                </div>
+                <div class="elements">
+                    <label for="USNInput">USN <span> : </span> </label>
+                    <input type="text" id="USNInput" placeholder="Enter the USN">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit" id="submit-btn" onclick="extractData()">
+                </div>
+            </div>
+            <div class="side-img">
+                <img src="bg.png" alt="">
+                <div></div>
+                <span class="cont"><span>STUDENT</span>
+                    <hr><span>RESULT</span>
+                    <hr><span>ANALYSIS</span>
+                </span>
+            </div>
+        </div>
+        <!-- <div id="result-container"></div> -->
+    </main>
+    <!-- <div class="table">
+        <table>
+            <tr>
+                <th>SI.No</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Subject 1</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Subject 2</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Subject 3</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Subject 4</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Subject 5</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Subject 6</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Subject 7</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Subject 8</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>SGPA</td>
+                <td>10</td>
+            </tr>
+        </table>
+    </div>
+    <button class="print">PRINT</button> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
